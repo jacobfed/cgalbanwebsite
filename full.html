@@ -73,15 +73,11 @@ h2,h3,h4,h5 {
 }
 
 #icon {
+  height=100px;
   max-width: 200px;
   margin: 1% auto;
 }
 
-.btn {
-  font-size: 18px;
-  color: #FFF;
-  padding: 12px 22px;
-}
 
 .img-responsive {
   margin: 0 auto;
@@ -133,7 +129,9 @@ hoverable:hover {
   font-size: 55px;
   color: black;
 }
-
+.brand-primary: {
+  color:#ffcb05;
+}
 </style>
 </head>
 
@@ -142,6 +140,9 @@ hoverable:hover {
     <div class="row">
       <div class="col-md-6">
         <img src="img/craigLogo.png" alt="Craig Logo" width="60%">
+        <div class="d-block d-md-none ">
+          <br/>
+        </div>
       </div>
       <!-- Place for image of labs around the world-->
       <div class="col-md-6">
@@ -160,7 +161,7 @@ hoverable:hover {
     <!-- Collapsible Button for Mobile Devices -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> 
     
     <!-- Pages with (no) Dropdowns -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -251,7 +252,7 @@ engineers, as well as large clinical trials and industrial partners.</p>
     <div class="row">
       <div class="col-md-6">
         <h3>Core Director</h3>
-        <button type="button" class="btn-lg btn-light" data-toggle="collapse" data-target="#craig">Craig Galban, Ph.D.</button>
+        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#craig">Craig Galban, Ph.D.</button>
         <div id="craig" class="collapse">
           <br/>
           <p>University of Michigan,<br/>Department of Radiology<br/><br/>
@@ -266,7 +267,7 @@ engineers, as well as large clinical trials and industrial partners.</p>
     <div class="row">
       <div class="col-md-6">
         <h3>Research Tech Associate</h3>
-        <button type="button" class="btn-lg btn-light" data-toggle="collapse" data-target="#aleksa">Aleksa Fortuna</button>
+        <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#aleksa">Aleksa Fortuna</button>
         <!-- Aleksa's Contact Information -->
         <div id="aleksa" class="collapse">
           <p>
@@ -282,7 +283,7 @@ engineers, as well as large clinical trials and industrial partners.</p>
     </div><br/><div class="row">
       <div class="col-sm-4">
         <h3>Research Assistant</h3>
-        <button type="button" class="btn-lg btn-light" data-toggle="collapse" data-target="#andrew">Andrew Dziobak</button>
+        <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#andrew">Andrew Dziobak</button>
         <!-- Andrew's Contact Information -->
         <div id="andrew" class="collapse">
           <p>Email: afdzioba@umich.edu</p>
@@ -291,7 +292,7 @@ engineers, as well as large clinical trials and industrial partners.</p>
     </div><br/><div class="row">
       <div class="col-sm-4">
         <h3>Research Assistant</h3>
-        <button type="button" class="btn-lg btn-light" data-toggle="collapse" data-target="#jacob">Jacob Fedrigon</button>
+        <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#jacob">Jacob Fedrigon</button>
         <!-- Jacob's Contact Information -->
         <div id="jacob" class="collapse">
           <p>Email: jacobfed@umich.edu</p>
@@ -301,7 +302,7 @@ engineers, as well as large clinical trials and industrial partners.</p>
     </div><br/><div class="row">
       <div class="col-sm-4">
         <h3>Research Assistant</h3>
-        <button type="button" class="btn-lg btn-light" data-toggle="collapse" data-target="#laria">Laria Reynolds</button>
+        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#laria">Laria Reynolds</button>
         <!-- Laria's Contact Information -->
         <div id="laria" class="collapse">
           <p>Email: lreyn@umich.edu</p>
@@ -315,8 +316,8 @@ engineers, as well as large clinical trials and industrial partners.</p>
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h3>Development Scientist</h3>
-        <button type="button" class="btn-lg btn-light" data-toggle="collapse" data-target="#charles">Charles Hatt</button>
+        <h3>Development Scientist, Imbio LLC</h3>
+        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#charles">Charles Hatt</button>
         <div id="charles" class="collapse">
           <p><br/>imbio, llc <br/>
           University of Michigan Medical School<br/>
@@ -327,8 +328,8 @@ engineers, as well as large clinical trials and industrial partners.</p>
     <br/>
     <div class="row">
       <div class="col-md-6">
-        <h3>Research Investigator</h3>
-        <button type="button" class="btn-lg btn-light" data-toggle="collapse" data-target="#ben">Ben Hoff, Ph.D.</button>
+        <h3>Research Investigator, UofM Radiology</h3>
+        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#ben">Ben Hoff, Ph.D.</button>
         <div id="ben" class="collapse">
           <p><br/>University of Michigan Medical School, Radiology<br/>
           Email: bahoff@umich.edu<br/></P>
@@ -348,17 +349,20 @@ engineers, as well as large clinical trials and industrial partners.</p>
       <div class="col-sm-4">
         <img src="img/copd.png" alt="COPD Symbol" height="100px" id="icon">
         <h4>COPD</h4>
-        <a class="btn btn-outline-dark btn-sm" href="research/copd.html">Webpage</a>
+        <p> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/copd.html">Webpage</a>
       </div>
       <div class="col-sm-4">
         <img src="img/bos.png" alt="BOS Symbol"  height="100px" id="icon">
         <h4>BOS</h4>
-        <a class="btn btn-outline-dark btn-sm" href="research/copd.html">Webpage</a>
+        <p> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/bos.html">Webpage</a>
       </div>
       <div class="col-sm-4">
         <img src="img/cancer.png" alt="Cancer Symbol" height="100px" id="icon">
         <h4>Cancer</h4>
-        <a class="btn btn-outline-dark btn-sm" href="research/copd.html">Webpage</a>
+        <p> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/cancer.html">Webpage</a>
       </div>
     </div>
     <br/>
@@ -366,17 +370,20 @@ engineers, as well as large clinical trials and industrial partners.</p>
       <div class="col-sm-4">
         <img src="img/machinelearning.png" alt="Machine Learning Symbol" height=100px id="icon">
         <h4>Machine Learning</h4>
-        <a class="btn btn-outline-dark btn-sm" href="research/copd.html">Webpage</a>
+        <p> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/machinelearning.html">Webpage</a>
       </div>
       <div class="col-sm-4">
         <img src="img/qat.jpg" alt="QAT Symbol"  height= 100px id="icon">
         <h4>QAT</h4>
-        <a class="btn btn-outline-dark btn-sm" href="research/copd.html">Webpage</a>
+        <p> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/qat.html">Webpage</a>
       </div>
       <div class="col-sm-4">
         <img src="img/tPRM.png" alt="tPRM Symbol" height=100px id="icon">
         <h4>tPRM</h4>
-        <a class="btn btn-outline-dark btn-sm" href="research/copd.html">Webpage</a>
+        <p> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/tprm.html">Webpage</a>
       </div>
     </div>
   </div>
@@ -589,15 +596,16 @@ engineers, as well as large clinical trials and industrial partners.</p>
 
   <!-- Start of Collaborations -->
   <div class="container text-center">
-    <h1> Collaborations </h1>
+    <h1> Collaborators </h1>
     <div class="row">
       <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="https://www.google.co.uk/maps/d/u/0/embed?mid=133o4gAaNOna_zLEBb8AY34Zj9oBi8QP4&z=2"></iframe>
       </div>
     </div>
     <br/><br/>
-    <button type="button" class="btn-lg btn-light" data-toggle="collapse" data-target="#collaborators">List of Collaborators</button>
+    <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#collaborators">List of Collaborators</button>
         <div id="collaborators" class="collapse">
+          <br/>
           <h4> Michigan </h4>
           <p><b>Beaumont Health<br/>
           Michigan Medicine</b><br/>
@@ -608,24 +616,33 @@ engineers, as well as large clinical trials and industrial partners.</p>
           </p>
           <h4> United States </h4>
           <p><b>
+          Florida State University<br/>
           Fred Hutchinson Cancer Research Center<br/>
+          National Jewish Health<br/>
           Stanford University School of Medicine, CA<br/>
+          University of Iowa <br/>
           University of Wisconsin School of Medicine &amp; Public Health<br/>
+          Vanderbilt University Medical Center<br/>
+          Weill Cornell Medical College <br/>
           </b></p>
           <h4> International </h4>
           <p>
-          <b>Hôpital Saint Louis, Paris, France<br/>
-          University of Heidelberg, Germany <br/>
+          <b>Goa Medical College, India<br/>
+          Hôpital Saint Louis, Paris, France<br/>
+          Karolinska University Hospital, Sweden <br/>
+          University of British Columbia, Canada<br/>
+          University of Heidelberg, Germany<br/>
           University of Leicester, England<br/>
           University of Leuven, Belgium<br/>
           University Medical Center Utrecht, Netherlands<br/>
           </b></p>
         </div>
-	
-
   </div>
-    <!--width="600" height="480"-->
     <div class="contatainer text-center">
+      <p>If you are looking to become a collaborator with us, fill out this google form.</p>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdGOqa9WGxB6ymqvpRPiMOEBvo5nTl5kOT_kznush0rHTvdfQ/viewform?embedded=true"
+        width="700" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
 
   <!-- End of Collaborations -->
@@ -643,7 +660,7 @@ engineers, as well as large clinical trials and industrial partners.</p>
     <h1> Research Opportunities </h1>
     <hr>
     <p> For inquiries and opportunities, fill out this Google Form </p>
-    <a class="btn btn-secondary" href="https://goo.gl/forms/U2BDD2G5bJoIEvKx1">Contact Us</a>
+    <a class="btn btn-outline-dark" href="https://goo.gl/forms/U2BDD2G5bJoIEvKx1">Contact Us</a>
   </div>
   <!-- End of Opportunities -->
 
