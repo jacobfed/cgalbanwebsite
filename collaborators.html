@@ -66,6 +66,10 @@ h2,h3,h4,h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+.smaller {
+  font-size:14px;
+  color: grey;
+}
 /* End of Fonts */
 
 .container {
@@ -73,22 +77,11 @@ h2,h3,h4,h5 {
 }
 
 #icon {
+  height=100px;
   max-width: 200px;
   margin: 1% auto;
 }
 
-.btn {
-  font-size: 18px;
-  color: #FFF;
-  padding: 12px 22px;
-}
-
-footer {
-  width: 100%;
-  background-color: lightgrey ;
-  padding: 5%;
-  color: #FFF;
-}
 
 .img-responsive {
   margin: 0 auto;
@@ -98,40 +91,6 @@ footer {
   width: 50%;
   height: auto;
 }
-
-.fa {
-  padding: 20px;
-  font-size: 25px;
-  color: #FFF;
-}
-
-.fa:hover {
-  color: #D5D5D5;
-  text-decoration: none;
-}
-
-@media (max-width: 900px){
-  .fa {
-    font-size: 20px;
-    padding: 10px;
-  }
-}
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none;
-  }
-  #icon {
-    max-width: 150px;
-  }
-  h2 {
-    font-size: 1.7em;
-  }
-  .embed-responsive {
-    display:none;
-  }
-}
-
-
 a:link {
   color: black;
 }
@@ -174,7 +133,9 @@ hoverable:hover {
   font-size: 55px;
   color: black;
 }
-
+.brand-primary: {
+  color:#ffcb05;
+}
 </style>
 </head>
 
@@ -183,6 +144,9 @@ hoverable:hover {
     <div class="row">
       <div class="col-md-6">
         <img src="img/craigLogo.png" alt="Craig Logo" width="60%">
+        <div class="d-block d-md-none ">
+          <br/>
+        </div>
       </div>
       <!-- Place for image of labs around the world-->
       <div class="col-md-6">
@@ -201,54 +165,40 @@ hoverable:hover {
     <!-- Collapsible Button for Mobile Devices -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> 
     
     <!-- Pages with (no) Dropdowns -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <!-- TODO Change Active for every Page when Navbar and Footer Are All set-->
-        <!-- Projects Dropdown -->
-        <!--<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#ld">Lung Disease</a>
-            <a class="dropdown-item" href="#lc">Lung Cancer</a>
-            <a class="dropdown-item" href="#c">Cancer</a>
-          </div>            
-        </li>-->
-        <!-- End of Project Dropdown -->
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
         <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="collaborations.html">Collaborations</a></li>
-        <li class="nav-item"><a class="nav-link" href="events.html">Upcoming Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferences.html">Conferences</a></li>
+        <li class="nav-item"><a class="nav-link" href="opportunities.html">Opportunities</a></li>
       </ul>
     </div>
   </nav>  
 
   <!-- End of Navbar -->
-                          <!-- End of Base URL -->
+
+  <!-- End of Base URL -->
 
   <!-- Start of Collaborations -->
   <div class="container text-center">
-    <h1> Collaborations </h1>
-    <div id="stanford" class="collapse">
-      <p> Stanford University School of Medicine</p>
-    </div>
+    <h1> Collaborators </h1>
     <div class="row">
-      <div class="col-md-6">
-        <img src="img/usa.png" class="img-fluid" alt="United States Map">
-      </div>
-      <div class="col-md-6">
-        <img src="img/europe1.png" class="img-fluid" alt=" European Map">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.google.co.uk/maps/d/u/0/embed?mid=133o4gAaNOna_zLEBb8AY34Zj9oBi8QP4&z=2"></iframe>
       </div>
     </div>
     <br/><br/>
-    <h5 data-toggle="collapse" data-target="#collaborators">List of Collaborators</h5>
+    <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#collaborators">List of Collaborators</button>
         <div id="collaborators" class="collapse">
+          <br/>
           <h4> Michigan </h4>
           <p><b>Beaumont Health<br/>
-          Michigan Med</b><br/>
+          Michigan Medicine</b><br/>
           C. S. Mott Children's Hospital<br/>
           Radiation Oncology<br/>
           Radiology<br/>
@@ -256,25 +206,38 @@ hoverable:hover {
           </p>
           <h4> United States </h4>
           <p><b>
+          Florida State University<br/>
           Fred Hutchinson Cancer Research Center<br/>
+          National Jewish Health<br/>
           Stanford University School of Medicine, CA<br/>
+          University of Iowa <br/>
           University of Wisconsin School of Medicine &amp; Public Health<br/>
+          Vanderbilt University Medical Center<br/>
+          Weill Cornell Medical College <br/>
           </b></p>
           <h4> International </h4>
           <p>
-          <b>Hôpital Saint Louis, Paris, France<br/>
-          University of Heidelberg, Germany <br/>
+          <b>Goa Medical College, India<br/>
+          Hôpital Saint Louis, Paris, France<br/>
+          Karolinska University Hospital, Sweden <br/>
+          University of British Columbia, Canada<br/>
+          University of Heidelberg, Germany<br/>
           University of Leicester, England<br/>
           University of Leuven, Belgium<br/>
           University Medical Center Utrecht, Netherlands<br/>
           </b></p>
         </div>
   </div>
+    <div class="container text-center">
+      <p>If you are looking to become a collaborator with us, fill out this google form.</p>
+    </div>
+    <div class="embed-responsive embed-responsive-1by1">
+      <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSdGOqa9WGxB6ymqvpRPiMOEBvo5nTl5kOT_kznush0rHTvdfQ/viewform?embedded=true">Loading...</iframe>
+    </div>
 
   <!-- End of Collaborations -->
 
 
-                    <!-- Start of Base Pages -->
   <!-- Horizontal Line -->
   <div class="container text-center">
     <hr>

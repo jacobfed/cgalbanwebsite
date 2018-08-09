@@ -66,6 +66,10 @@ h2,h3,h4,h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+.smaller {
+  font-size:14px;
+  color: grey;
+}
 /* End of Fonts */
 
 .container {
@@ -73,22 +77,11 @@ h2,h3,h4,h5 {
 }
 
 #icon {
+  height=100px;
   max-width: 200px;
   margin: 1% auto;
 }
 
-.btn {
-  font-size: 18px;
-  color: #FFF;
-  padding: 12px 22px;
-}
-
-footer {
-  width: 100%;
-  background-color: lightgrey ;
-  padding: 5%;
-  color: #FFF;
-}
 
 .img-responsive {
   margin: 0 auto;
@@ -98,40 +91,6 @@ footer {
   width: 50%;
   height: auto;
 }
-
-.fa {
-  padding: 20px;
-  font-size: 25px;
-  color: #FFF;
-}
-
-.fa:hover {
-  color: #D5D5D5;
-  text-decoration: none;
-}
-
-@media (max-width: 900px){
-  .fa {
-    font-size: 20px;
-    padding: 10px;
-  }
-}
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none;
-  }
-  #icon {
-    max-width: 150px;
-  }
-  h2 {
-    font-size: 1.7em;
-  }
-  .embed-responsive {
-    display:none;
-  }
-}
-
-
 a:link {
   color: black;
 }
@@ -174,7 +133,9 @@ hoverable:hover {
   font-size: 55px;
   color: black;
 }
-
+.brand-primary: {
+  color:#ffcb05;
+}
 </style>
 </head>
 
@@ -183,6 +144,9 @@ hoverable:hover {
     <div class="row">
       <div class="col-md-6">
         <img src="img/craigLogo.png" alt="Craig Logo" width="60%">
+        <div class="d-block d-md-none ">
+          <br/>
+        </div>
       </div>
       <!-- Place for image of labs around the world-->
       <div class="col-md-6">
@@ -201,120 +165,76 @@ hoverable:hover {
     <!-- Collapsible Button for Mobile Devices -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> 
     
     <!-- Pages with (no) Dropdowns -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <!-- TODO Change Active for every Page when Navbar and Footer Are All set-->
-        <!-- Projects Dropdown -->
-        <!--<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#ld">Lung Disease</a>
-            <a class="dropdown-item" href="#lc">Lung Cancer</a>
-            <a class="dropdown-item" href="#c">Cancer</a>
-          </div>            
-        </li>-->
-        <!-- End of Project Dropdown -->
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
         <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="collaborations.html">Collaborations</a></li>
-        <li class="nav-item"><a class="nav-link" href="events.html">Upcoming Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferences.html">Conferences</a></li>
+        <li class="nav-item"><a class="nav-link" href="opportunities.html">Opportunities</a></li>
       </ul>
     </div>
   </nav>  
 
   <!-- End of Navbar -->
-                          <!-- End of Base URL -->
 
+  <!-- End of Base URL -->
+
+  
   <!-- Start of Projects -->
   <div class="container text-center">
     <h1> Projects </h1>
   </div>
-  <div class="container">
-    <h4>Project Index</h4>
-    <ul>
-      <li><a data-toggle="collapse" data-target="#ldProjects" >Lung Disease</a></li>
-        <!-- Links to Lung Disease Studies -->
-        <li><div id="ldProjects" class="collapse">
-          <ul>
-          <li><a href="#ld-clad">CLAD- Chronic Lung Allograft Dysfunction</a></li>
-          <li><a href="#ld-a">Asthma</a></li>
-          <li><a href="#ld-cf">Cystic Fibrosis</a></li>
-          <li><a href="#ld-copd">COPD- Chronic Obstructive Pulmonary Disease</a></li>
-          <li><a href="#ld-acos">ACOS- Asthma COPD Overlap Syndrome</a></li>
-          <li><a href="#ld-b">Bronchiolitis</a></li>
-          <li><a href="#ld-bmt">BMT- Bone Marrow Transplant</a></li>
-          <li><a href="#ld-lt">Lung Transplant</a></li>
-          </ul>
-        </div>
-        </li>
-    <li><a href="#lc">Lung Cancer</a></li>
-	<!-- Links to Lung Cancer Studies -->
-    <li><a data-toggle="collapse" data-target="#cProjects">Cancer</a></li>
-	<!-- Links to Cancer Studies -->
-      <li><div id="cProjects" class="collapse">
-          <ul>
-          <li><a href="#c-g">Glioma</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
   <div class="container text-center">
-    <hr>
-  </div>
-  <h2 id="ld">Lung Disease</h2>
-  <div id="ld-clad">
-  <br/><br/><br/>
-	<h4>CLAD- Chronic Lung Allograft Dysfunction</h4>    
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div><div id="ld-a">
-  <br/><br/><br/>
-	<h4>Asthma</h4>
-	<h6> SARP- Severe Asthma Research Program </h6>
-	<p> For more information on SARP, visit <a href="http://www.severeasthma.org/">http://www.severeasthma.org/</a></p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div><div id="ld-cs">
-  <br/><br/><br/>
-	<h4>Cystic Fibrosis</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div><div id="ld-copd">
-  <br/><br/><br/>
-	<h4>COPD- Chronic Obstructive Pulmonary Disease</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div><div id="ld-acos">
-  <br/><br/><br/>
-	<h4>ACOS- Asthma COPD Overlap Syndrome</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div><div id="ld-b">
-  <br/><br/><br/>
-	<h4>Bronchiolitis</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div><div id="ld-bmt">
-  <br/><br/><br/>
-	<h4>BMT- Bone Marrow Transplant</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div><div id="ld-lt">
-  <br/><br/><br/>
-	<h4>Lung Transplant</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div><div id="lc">
-  <br/><br/><br/>
-  <h2>Lung Cancer</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div id="c-g">
-  <br/><br/><br/>
-  <h2 >Cancer</h2>
-	<h4>Glioma</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="img/copd.png" alt="COPD Symbol" height="100px" id="icon">
+        <h4>COPD</h4>
+        <p class="smaller"> (Sample) Chronic Obstructive Pulmonary Disease is a chronic inflammatory lung disease that causes obstructed
+        airflow from the lungs.</p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/copd.html">Webpage</a>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/bos.png" alt="BOS Symbol"  height="100px" id="icon">
+        <h4>BOS</h4>
+        <p class="smaller">Brochiolitis Obliterans Syndrome can occur after lung transplants.</p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/bos.html">Webpage</a>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/cancer.png" alt="Cancer Symbol" height="100px" id="icon">
+        <h4>Cancer</h4>
+        <p class="smaller"> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/cancer.html">Webpage</a>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="img/machinelearning.png" alt="Machine Learning Symbol" height=100px id="icon">
+        <h4>Machine Learning</h4>
+        <p class="smaller"> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/machinelearning.html">Webpage</a>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/qat.jpg" alt="QAT Symbol"  height= 100px id="icon">
+        <h4>QAT</h4>
+        <p class="smaller"> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/qat.html">Webpage</a>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/tPRM.png" alt="tPRM Symbol" height=100px id="icon">
+        <h4>tPRM</h4>
+        <p class="smaller"> Lorem Ipsum . . . </p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/tprm.html">Webpage</a>
+      </div>
+    </div>
   </div>
   <!-- End of Projects -->
 
-                    <!-- Start of Base Pages -->
   <!-- Horizontal Line -->
   <div class="container text-center">
     <hr>

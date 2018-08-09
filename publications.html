@@ -66,6 +66,10 @@ h2,h3,h4,h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+.smaller {
+  font-size:14px;
+  color: grey;
+}
 /* End of Fonts */
 
 .container {
@@ -73,22 +77,11 @@ h2,h3,h4,h5 {
 }
 
 #icon {
+  height=100px;
   max-width: 200px;
   margin: 1% auto;
 }
 
-.btn {
-  font-size: 18px;
-  color: #FFF;
-  padding: 12px 22px;
-}
-
-footer {
-  width: 100%;
-  background-color: lightgrey ;
-  padding: 5%;
-  color: #FFF;
-}
 
 .img-responsive {
   margin: 0 auto;
@@ -98,40 +91,6 @@ footer {
   width: 50%;
   height: auto;
 }
-
-.fa {
-  padding: 20px;
-  font-size: 25px;
-  color: #FFF;
-}
-
-.fa:hover {
-  color: #D5D5D5;
-  text-decoration: none;
-}
-
-@media (max-width: 900px){
-  .fa {
-    font-size: 20px;
-    padding: 10px;
-  }
-}
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none;
-  }
-  #icon {
-    max-width: 150px;
-  }
-  h2 {
-    font-size: 1.7em;
-  }
-  .embed-responsive {
-    display:none;
-  }
-}
-
-
 a:link {
   color: black;
 }
@@ -174,7 +133,9 @@ hoverable:hover {
   font-size: 55px;
   color: black;
 }
-
+.brand-primary: {
+  color:#ffcb05;
+}
 </style>
 </head>
 
@@ -183,6 +144,9 @@ hoverable:hover {
     <div class="row">
       <div class="col-md-6">
         <img src="img/craigLogo.png" alt="Craig Logo" width="60%">
+        <div class="d-block d-md-none ">
+          <br/>
+        </div>
       </div>
       <!-- Place for image of labs around the world-->
       <div class="col-md-6">
@@ -201,43 +165,25 @@ hoverable:hover {
     <!-- Collapsible Button for Mobile Devices -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> 
     
     <!-- Pages with (no) Dropdowns -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <!-- TODO Change Active for every Page when Navbar and Footer Are All set-->
-        <!-- Projects Dropdown -->
-        <!--<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#ld">Lung Disease</a>
-            <a class="dropdown-item" href="#lc">Lung Cancer</a>
-            <a class="dropdown-item" href="#c">Cancer</a>
-          </div>            
-        </li>-->
-        <!-- End of Project Dropdown -->
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
         <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="collaborations.html">Collaborations</a></li>
-        <li class="nav-item"><a class="nav-link" href="events.html">Upcoming Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferences.html">Conferences</a></li>
+        <li class="nav-item"><a class="nav-link" href="opportunities.html">Opportunities</a></li>
       </ul>
     </div>
   </nav>  
 
   <!-- End of Navbar -->
-                          <!-- End of Base URL -->
 
+  <!-- End of Base URL -->
 
-  <!-- Start of Publications -->
-  <!-- Adding to Publication 
-    Use this template
-    <br/>
-    <br/>
-    <a href="url">Publication Name</a>
-    Add 2 <br/>'s at the end of a year to set the right distance
-  -->
   <div class="container text-center">
     <h1> Publications </h1>
     <br/>
@@ -435,7 +381,8 @@ hoverable:hover {
   </div>
   <!-- End of Publications -->
 
-                    <!-- Start of Base Pages -->
+  <!-- Start of Base Pages -->
+
   <!-- Horizontal Line -->
   <div class="container text-center">
     <hr>

@@ -66,6 +66,10 @@ h2,h3,h4,h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+.smaller {
+  font-size:14px;
+  color: grey;
+}
 /* End of Fonts */
 
 .container {
@@ -73,22 +77,11 @@ h2,h3,h4,h5 {
 }
 
 #icon {
+  height=100px;
   max-width: 200px;
   margin: 1% auto;
 }
 
-.btn {
-  font-size: 18px;
-  color: #FFF;
-  padding: 12px 22px;
-}
-
-footer {
-  width: 100%;
-  background-color: lightgrey ;
-  padding: 5%;
-  color: #FFF;
-}
 
 .img-responsive {
   margin: 0 auto;
@@ -98,40 +91,6 @@ footer {
   width: 50%;
   height: auto;
 }
-
-.fa {
-  padding: 20px;
-  font-size: 25px;
-  color: #FFF;
-}
-
-.fa:hover {
-  color: #D5D5D5;
-  text-decoration: none;
-}
-
-@media (max-width: 900px){
-  .fa {
-    font-size: 20px;
-    padding: 10px;
-  }
-}
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none;
-  }
-  #icon {
-    max-width: 150px;
-  }
-  h2 {
-    font-size: 1.7em;
-  }
-  .embed-responsive {
-    display:none;
-  }
-}
-
-
 a:link {
   color: black;
 }
@@ -174,7 +133,9 @@ hoverable:hover {
   font-size: 55px;
   color: black;
 }
-
+.brand-primary: {
+  color:#ffcb05;
+}
 </style>
 </head>
 
@@ -183,6 +144,9 @@ hoverable:hover {
     <div class="row">
       <div class="col-md-6">
         <img src="img/craigLogo.png" alt="Craig Logo" width="60%">
+        <div class="d-block d-md-none ">
+          <br/>
+        </div>
       </div>
       <!-- Place for image of labs around the world-->
       <div class="col-md-6">
@@ -201,44 +165,38 @@ hoverable:hover {
     <!-- Collapsible Button for Mobile Devices -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> 
     
     <!-- Pages with (no) Dropdowns -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <!-- TODO Change Active for every Page when Navbar and Footer Are All set-->
-        <!-- Projects Dropdown -->
-        <!--<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#ld">Lung Disease</a>
-            <a class="dropdown-item" href="#lc">Lung Cancer</a>
-            <a class="dropdown-item" href="#c">Cancer</a>
-          </div>            
-        </li>-->
-        <!-- End of Project Dropdown -->
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
         <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="collaborations.html">Collaborations</a></li>
-        <li class="nav-item"><a class="nav-link" href="events.html">Upcoming Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferences.html">Conferences</a></li>
+        <li class="nav-item"><a class="nav-link" href="opportunities.html">Opportunities</a></li>
       </ul>
     </div>
   </nav>  
 
   <!-- End of Navbar -->
-                          <!-- End of Base URL -->
+
+  <div class="container text-center">
+    <hr>
+  </div>
 
   <!-- Start of Team Members -->
   <div class="container text-center">
-    <h1>The Team</h1>
+    <h1>The Core Team</h1>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-6" data-toggle="collapse" data-target="#craig">
+      <div class="col-md-6">
         <h3>Core Director</h3>
-        <h5 data-toggle="collapse" data-target="#craig"> Craig Galban, Ph.D.</h5>
+        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#craig">Craig Galban, Ph.D.</button>
         <div id="craig" class="collapse">
+          <br/>
           <p>University of Michigan,<br/>Department of Radiology<br/><br/>
           BSRB, Room A506 <br/>
           109 Zina Pitcher Place <br/> Ann Arbor, MI 48109-2200 <br/> 
@@ -251,10 +209,10 @@ hoverable:hover {
     <div class="row">
       <div class="col-md-6">
         <h3>Research Tech Associate</h3>
-        <h5 data-toggle="collapse" data-target="#aleksa">Aleksa Fortuna</h5>
+        <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#aleksa">Aleksa Fortuna</button>
         <!-- Aleksa's Contact Information -->
         <div id="aleksa" class="collapse">
-          <p>
+          <p><br/>
           University of Michigan,<br/>Department of Radiology<br/><br/>
           BSRB, D205 <br/>
             109 Zina Pitcher Place<br/>
@@ -267,37 +225,81 @@ hoverable:hover {
     </div><br/><div class="row">
       <div class="col-sm-4">
         <h3>Research Assistant</h3>
-        <h5 data-toggle="collapse" data-target="#andrew">Andrew Dziobak</h5>
+        <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#andrew">Andrew Dziobak</button>
         <!-- Andrew's Contact Information -->
         <div id="andrew" class="collapse">
-          <p>Email: afdzioba@umich.edu</p>
+          <p><br/>Email: afdzioba@umich.edu</p>
         </div>
       </div>
     </div><br/><div class="row">
       <div class="col-sm-4">
         <h3>Research Assistant</h3>
-        <h5 data-toggle="collapse" data-target="#jacob">Jacob Fedrigon</h5>
+        <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#jacob">Jacob Fedrigon</button>
         <!-- Jacob's Contact Information -->
         <div id="jacob" class="collapse">
-          <p>Email: jacobfed@umich.edu</p>
+          <p><br/>Email: jacobfed@umich.edu</p>
           <a href="http://www-personal.umich.edu/~jacobfed/">Personal Website</a>
         </div>
       </div>
     </div><br/><div class="row">
       <div class="col-sm-4">
         <h3>Research Assistant</h3>
-        <h5 data-toggle="collapse" data-target="#laria">Laria Reynolds</h5>
+        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#laria">Laria Reynolds</button>
         <!-- Laria's Contact Information -->
         <div id="laria" class="collapse">
-          <p>Email: lreyn@umich.edu</p>
+          <p><br/>Email: lreyn@umich.edu</p>
         </div>
       </div>
     </div>
   </div> 
+  <div class="container text-center">
+    <h1>Affiliated Group Members</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Research Assistant Professor, Michigan Medicine</h3>
+        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#stefanie">Stefanie
+          Galban, Ph.D.</button>
+        <div id="stefanie" class="collapse">
+          <p>
+          <br/>University of Michigan,<br/>Department of Radiology<br/><br/>
+            Biomedical Research Building<br/>
+            109 Zina Pitcher Place, Room A502<br/>
+            Ann Arbor, MI 48109-2200<br/>
+            Phone (office): 734-615-2281<br/>
+            Email: abfortun@med.umich.edu<br/>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Development Scientist, Imbio LLC</h3>
+        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#charles">Charles Hatt</button>
+        <div id="charles" class="collapse">
+          <p><br/>
+          University of Michigan Medical School<br/>
+          Email: charleshatt@imbio.com<br/></p> 
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Research Investigator, Michigan Medicine</h3>
+        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#ben">Ben Hoff, Ph.D.</button>
+        <div id="ben" class="collapse">
+          <p><br/>University of Michigan Medical School, Radiology<br/>
+          Email: bahoff@umich.edu<br/></P>
+        </div>
+      </div>
+    </div>
+    <br/>
+  </div>
   <!-- End of Team Members -->
   
-
-                    <!-- Start of Base Pages -->
   <!-- Horizontal Line -->
   <div class="container text-center">
     <hr>
