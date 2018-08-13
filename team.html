@@ -21,7 +21,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   
   <!-- New Font Scripts -->
-  <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">-->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 
   <!-- Personalized Style Sheet for bootstrap changes -->
@@ -80,6 +81,16 @@ h2,h3,h4,h5 {
   height=100px;
   max-width: 200px;
   margin: 1% auto;
+}
+.fa {
+  padding: 20px;
+  font-size: 75px;
+  color: #FFF;
+}
+
+.fa:hover {
+  color: #D5D5D5;
+  text-decoration: none;
 }
 
 
@@ -187,33 +198,60 @@ hoverable:hover {
   </div>
 
   <!-- Start of Team Members -->
-  <div class="container text-center">
-    <h1>The Core Team</h1>
-  </div>
-  <div class="container">
-    <div class="row">
+  <div class="d-none d-lg-block">
+    <script>
+       $(document).click(function(e) {
+      if (!$(e.target).is('.panel-body')) {
+          $('.collapse').collapse('hide');	    
+        }
+    }); 
+    </script>
+    <!-- Start of Desktop Core Team -->
+    <div class="container text-center">
+      <h1>The Core Team</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Principle Investigator</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#craig">Craig Galban, Ph.D.</button>
+          <br/>
+          <br/>
+          <h3>Research Tech Associate</h3>
+          <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#aleksa">Aleksa Fortuna</button>
+          <br/>
+          <br/>
+          <h3>Research Assistant</h3>
+          <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#andrew">Andrew Dziobak</button>
+          <br/>
+          <br/>
+          <h3>Research Assistant</h3>
+          <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#jacob">Jacob Fedrigon</button>
+          <br/>
+          <br/>
+          <h3>Research Assistant</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#laria">Laria Reynolds</button>
+          <br/>
+          <br/>
+        </div>
       <div class="col-md-6">
-        <h3>Core Director</h3>
-        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#craig">Craig Galban, Ph.D.</button>
         <div id="craig" class="collapse">
           <br/>
+          <h3>Craig Galban</h3>
           <p>University of Michigan,<br/>Department of Radiology<br/><br/>
+          Director of Preclinical Imaging &amp; Computational Analysis<br/>
+          UM Rogel Cancer CenterCore Director<br/>
+          Center For Molecular Imaging Associate Professor<br/>
+          Department of Radiology Adjunct Associate Professor<br/>
+          Department of Biomedical Engineering<br/><br/>
           BSRB, Room A506 <br/>
           109 Zina Pitcher Place <br/> Ann Arbor, MI 48109-2200 <br/> 
           Phone (office): 734-764-8726<br/>Phone (google): 734-956-0219<br/>
           Fax: 734-615-1599 <br/>Email: cgalban@med.umich.edu </p>
         </div>
-      </div>
-    </div>
-    <br/>
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Research Tech Associate</h3>
-        <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#aleksa">Aleksa Fortuna</button>
-        <!-- Aleksa's Contact Information -->
         <div id="aleksa" class="collapse">
-          <p><br/>
-          University of Michigan,<br/>Department of Radiology<br/><br/>
+          <h3>Aleksa Fortuna</h3>
+          <p>University of Michigan,<br/>Department of Radiology<br/><br/>
           BSRB, D205 <br/>
             109 Zina Pitcher Place<br/>
             Ann Arbor, MI 48109-2200<br/>
@@ -221,49 +259,55 @@ hoverable:hover {
             Email: abfortun@med.umich.edu<br/>
           </p>
         </div>
-      </div>
-    </div><br/><div class="row">
-      <div class="col-sm-4">
-        <h3>Research Assistant</h3>
-        <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#andrew">Andrew Dziobak</button>
         <!-- Andrew's Contact Information -->
         <div id="andrew" class="collapse">
-          <p><br/>Email: afdzioba@umich.edu</p>
+          <h3>Andrew Dziobak</h3>        
+          <p>Email: afdzioba@umich.edu</p>
         </div>
-      </div>
-    </div><br/><div class="row">
-      <div class="col-sm-4">
-        <h3>Research Assistant</h3>
-        <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#jacob">Jacob Fedrigon</button>
         <!-- Jacob's Contact Information -->
         <div id="jacob" class="collapse">
-          <p><br/>Email: jacobfed@umich.edu</p>
-          <a href="http://www-personal.umich.edu/~jacobfed/">Personal Website</a>
+          <h3>Jacob Fedrigon</h3>
+          <p>University of Michigan, Computer Science<br/>
+          Email: jacobfed@umich.edu</p>
+          <a class="btn btn-outline-dark" href="http://www-personal.umich.edu/~jacobfed/">Personal Website</a>
+          <br/>
+          <a href="https://github.com/jacobfed" class="fa fa-github"> </a> 
         </div>
-      </div>
-    </div><br/><div class="row">
-      <div class="col-sm-4">
-        <h3>Research Assistant</h3>
-        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#laria">Laria Reynolds</button>
         <!-- Laria's Contact Information -->
         <div id="laria" class="collapse">
-          <p><br/>Email: lreyn@umich.edu</p>
+          <h3>Laria Reynolds</h3>
+          <p>University of Michigan, Computer Engineering<br/>Email: lreyn@umich.edu</p>
+          <a href="https://github.com/socketteer" class="fa fa-github"> </a> 
         </div>
       </div>
+    </div> 
+    <!-- End of Core Team -->
+
+    <!-- Start of Affiliated Members -->
+    <div class="container text-center">
+      <h1>Affiliated Members</h1>
     </div>
-  </div> 
-  <div class="container text-center">
-    <h1>Affiliated Group Members</h1>
-  </div>
-  <div class="container">
-    <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Research Assistant Professor, University of Michigan</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#stefanie">Stefanie
+            Galban, Ph.D.</button>
+          <br/>
+          <br/>
+          <h3>Development Scientist, Imbio LLC</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#charles">Charles Hatt</button>
+          <br/>
+          <br/>
+          <h3>Research Investigator, University of Michigan</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#ben">Ben Hoff, Ph.D.</button>
+          <br/>
+          <br/>
+        </div>
       <div class="col-md-6">
-        <h3>Research Assistant Professor, Michigan Medicine</h3>
-        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#stefanie">Stefanie
-          Galban, Ph.D.</button>
         <div id="stefanie" class="collapse">
-          <p>
-          <br/>University of Michigan,<br/>Department of Radiology<br/><br/>
+          <h3>Stefanie Galban</h3>
+          <p>University of Michigan,<br/>Department of Radiology<br/><br/>
             Biomedical Research Building<br/>
             109 Zina Pitcher Place, Room A502<br/>
             Ann Arbor, MI 48109-2200<br/>
@@ -271,32 +315,148 @@ hoverable:hover {
             Email: abfortun@med.umich.edu<br/>
           </p>
         </div>
-      </div>
-    </div>
-    <br/>
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Development Scientist, Imbio LLC</h3>
-        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#charles">Charles Hatt</button>
         <div id="charles" class="collapse">
-          <p><br/>
+          <h3>Charles Hatt</h3>
+          <p>
           University of Michigan Medical School<br/>
           Email: charleshatt@imbio.com<br/></p> 
         </div>
-      </div>
-    </div>
-    <br/>
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Research Investigator, Michigan Medicine</h3>
-        <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#ben">Ben Hoff, Ph.D.</button>
         <div id="ben" class="collapse">
-          <p><br/>University of Michigan Medical School, Radiology<br/>
+          <h3>Ben Hoff</h3>
+          <p>University of Michigan Medical School, Radiology<br/>
           Email: bahoff@umich.edu<br/></P>
         </div>
       </div>
+    </div> 
+      <!-- End of Affiliated Members -->
+      <br/>
     </div>
-    <br/>
+    </div> <!-- End of Desktop Version-->
+  </div>
+  <!-- End of  Desktop Team Members -->
+  
+  <!-- Start of Mobile Team Members -->
+  <div class="d-md-none">
+    <div class="container text-center">
+      <h1>The Core Team</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Principle Investigator</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#craig1">Craig Galban, Ph.D.</button>
+          <div id="craig1" class="collapse">
+            <br/>
+            <p>University of Michigan,<br/>Department of Radiology<br/><br/>
+            Director of Preclinical Imaging &amp; Computational Analysis<br/>
+            UM Rogel Cancer CenterCore Director<br/>
+            Center For Molecular Imaging Associate Professor<br/>
+            Department of Radiology Adjunct Associate Professor<br/>
+            Department of Biomedical Engineering<br/><br/>
+            BSRB, Room A506 <br/>
+            109 Zina Pitcher Place <br/> Ann Arbor, MI 48109-2200 <br/> 
+            Phone (office): 734-764-8726<br/>Phone (google): 734-956-0219<br/>
+            Fax: 734-615-1599 <br/>Email: cgalban@med.umich.edu </p>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Research Tech Associate</h3>
+          <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#aleksa1">Aleksa Fortuna</button>
+          <!-- Aleksa's Contact Information -->
+          <div id="aleksa1" class="collapse">
+            <p><br/>
+            University of Michigan,<br/>Department of Radiology<br/><br/>
+            BSRB, D205 <br/>
+              109 Zina Pitcher Place<br/>
+              Ann Arbor, MI 48109-2200<br/>
+              Phone (office): 734-615-2281<br/>
+              Email: abfortun@med.umich.edu<br/>
+            </p>
+          </div>
+        </div>
+      </div><br/><div class="row">
+        <div class="col-lg-12">
+          <h3>Research Assistant</h3>
+          <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#andrew1">Andrew Dziobak</button>
+          <!-- Andrew's Contact Information -->
+          <div id="andrew1" class="collapse">
+            <p><br/>Email: afdzioba@umich.edu</p>
+          </div>
+        </div>
+      </div><br/><div class="row">
+        <div class="col-lg-12">
+          <h3>Research Assistant</h3>
+          <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#jacob1">Jacob Fedrigon</button>
+          <!-- Jacob's Contact Information -->
+          <div id="jacob1" class="collapse">
+            <p><br/>University of Michigan, Computer Science<br/>
+            Email: jacobfed@umich.edu</p>
+            <a class="btn btn-outline-dark" href="http://www-personal.umich.edu/~jacobfed/">Personal Website</a>
+            <br/>
+            <a href="https://github.com/jacobfed" class="fa fa-github"> </a> 
+          </div>
+        </div>
+      </div><br/><div class="row">
+        <div class="col-lg-12">
+          <h3>Research Assistant</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#laria1">Laria Reynolds</button>
+          <!-- Laria's Contact Information -->
+          <div id="laria1" class="collapse">
+            <p><br/>University of Michigan, Computer Engineering<br/>Email: lreyn@umich.edu</p>
+          <a href="https://github.com/socketteer" class="fa fa-github"> </a> 
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="container text-center">
+      <h1>Affiliated Members</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Research Assistant Professor, University of Michigan</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#stefanie1">Stefanie
+            Galban, Ph.D.</button>
+          <div id="stefanie1" class="collapse">
+            <p>
+            <br/>University of Michigan,<br/>Department of Radiology<br/><br/>
+              Biomedical Research Building<br/>
+              109 Zina Pitcher Place, Room A502<br/>
+              Ann Arbor, MI 48109-2200<br/>
+              Phone (office): 734-615-2281<br/>
+              Email: abfortun@med.umich.edu<br/>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Development Scientist, Imbio LLC</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#charles1">Charles Hatt</button>
+          <div id="charles1" class="collapse">
+            <p><br/>
+            University of Michigan Medical School<br/>
+            Email: charleshatt@imbio.com<br/></p> 
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Research Investigator, University of Michigan</h3>
+          <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#ben1">Ben Hoff, Ph.D.</button>
+          <div id="ben1" class="collapse">
+            <p><br/>University of Michigan Medical School, Radiology<br/>
+            Email: bahoff@umich.edu<br/></P>
+          </div>
+        </div>
+      </div>
+      <br/>
+    </div>
   </div>
   <!-- End of Team Members -->
   
