@@ -36,6 +36,7 @@ p, a {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  text-align: justify;
 }
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -95,59 +96,91 @@ hoverable:hover {
 
 <body>
   <div class="container-fluid" id="um">
-    <br/>
-    <br/>
-    <br/>
     <div class="row">
-      <h1>Chronic Obstructive Pulmonary Disease, <br/>Emphysema</h1> 
+      <div class="col-lg-8">
+        <br/>
+        <h1>Chronic Obstructive Pulmonary Disease, <br/>Emphysema</h1> 
+        <div class="d-none d-lg-block">
+          <br/></br/><br/>
+        </div>
+      </div>
+      <!-- Start of Navbar -->
+      <div class="col-lg-4">
+        <br/>
+        <nav class="navbar-expand-sm navbar navbar-dark">
+          <!-- Brand -->
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class= "nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../research.html">Research</a></li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                links
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+          </ul> 
+        </nav>  
+      </div>
     </div>
-    <br/>
-    <br/>
-    <br/>
   </div>
+  <!-- End of Title and Navbar -->
+
+  <!-- Start of Content Panel-->
+
   <div class="container-fluid bg-light">
     <div class="row">
-    <h2><br/><b>Motivation</b></h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <p> Lorem Ipsum ... (Motivation Here)</p>
+      <div class="col-lg-8">
+        <br/>
+    <h2><b>New approaches to Characterize small airways disease in COPD patients.</b></h2>
+        <p>Chronic     Obstructive     Pulmonary     Disease     (COPD)  is characterized by incompletely reversible airflow limitations that hinders normal breathing. Small airways disease, a treatable component of COPD, accounts for most of the pulmonary dysfunction in patients with mild to moderate disease. Using standard of care paired CT scans, our technique, called Parametric Response Mapping, is capable of visualizing and quantifying the SAD in the presence of emphysema.</p>
       </div>
-      <div class="col-md-6">
-        <img  src="../img/emph.jpg" alt="Research Icon" height="80%">
+      <div class="col-lg-4">
+        <br/>
+        <img  src="../img/copdMotivation.png" alt="Research Icon" class="img-fluid">
       </div>
     </div>
   </div>
+  <!-- End of Content Panel-->
+
+  <!-- Start of Content Panel-->
+
   <div class="container-fluid">
     <div class="row">
-    <h2><br/><b>Goal</b></h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <p> Lorem Ipsum ... (Goal Here)</p>
+      <div class="col-lg-6">
+        <br/>
+    <h2><b>Predicting Spirometric Decline in COPD Patients</b></h2>
+      <p>COPD patients demonstrate varying rates of disease progression. Some may show a stable condition where treatments manage the conditions, we as others may progress rapidly losing nearly all pulmonary function over a short period of time. Early knowledge of the rate of progression will aid physicians in treating their patients. We have demonstrated that SAD, as measured by PRM, is predictive of spirometric decline in patients with mild to moderate COPD.</p>
       </div>
-      <div class="col-md-6">
-        <img  src="../img/emph.jpg" alt="Research Icon"  height="80%">
+      <div class="col-lg-6">
+        <br/>
+        <img  src="../img/spir.jpg" alt="Research Icon" class="img-fluid">
       </div>
     </div>
   </div>
-  <!-- Footer Content -->
-  <div class="container-fluid bg-light">
-    <br/>
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <a href="../research.html">
-          <img  src="../img/research.png" alt="Research Icon"  height="100px">
-        </a>
-      </div>
-      <div class="col-md-6 text-center">
-        <a href="../index.html">
-          <img  src="../img/home.png" alt="Home Icon" id="icon" height="100px">
-        </a>
-      </div>
-    </div>
-    <br/>
-  </div>
+  <!-- End of Content Panel-->
 
+  <!-- Start of Content Panel-->
+
+  <div class="container-fluid bg-light">
+    <div class="row">
+      <div class="col-lg-4">
+        <br/>
+        <img  src="../img/emph.jpg" alt="Research Icon" height="60%">
+      </div>
+      <div class="col-lg-8">
+        <br/>
+        <h2><b>Quantifying the Spatial heterogeneity of SAD</b></h2>
+        <p>Emphysema, irreversible alveolar destruction, is a leading cause of mortality in this population as  well  as  being identified  as  a  predictor  of poor survival. Associated  with  severe  COPD, emphysema advances  slowly with limited  treatment  options once  diagnosed. Evidence of small airways disease as  an  emphysema  precursor. This highlights the potential importance of the independent and non-invasive evaluation of fSAD through PRM. We have developed a technique that is an extension of the PRM approach that extracts local topological features from PRM-derived disease classifications maps.
+Movie/Picture: transition from PRM image to tPRM image</p>
+      </div>
+    </div>
+  </div>
+  <!-- End of Content Panel-->
+  <!-- Footer Content -->
 </body>
 </html>
