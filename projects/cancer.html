@@ -36,6 +36,7 @@ p, a {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  text-align: justify;
 }
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -95,58 +96,101 @@ hoverable:hover {
 
 <body>
   <div class="container-fluid" id="um">
-    <br/>
-    <br/>
-    <br/>
     <div class="row">
-      <h1>Chronic Obstructive Pulmonary Disease, <br/>Emphysema</h1> 
+      <div class="col-lg-8">
+        <br/>
+        <h1>Glioma and Lung Cancer</h1> 
+        <div class="d-none d-lg-block">
+          <br/></br/><br/>
+        </div>
+      </div>
+      <!-- Start of Navbar -->
+      <div class="col-lg-4">
+        <br/>
+        <nav class="navbar-expand-sm navbar navbar-dark">
+          <!-- Brand -->
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class= "nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../research.html">Research</a></li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                links
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://www.rogelcancercenter.org/">Rogel's UM Cancer Center</a>
+                <a class="dropdown-item" href="https://www.nature.com/articles/nm.1919">Paper 1</a>
+                <!--<a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+                -->
+              </div>
+            </li>
+          </ul> 
+        </nav>  
+      </div>
     </div>
-    <br/>
-    <br/>
-    <br/>
   </div>
+  <!-- End of Title and Navbar -->
+
+  <!-- Start of Content Panel-->
+
   <div class="container-fluid bg-light">
     <div class="row">
-    <h2><b> COPD Header </b></h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <p> Lorem Ipsum ...</p>
+      <div class="col-lg-8">
+        <br/>
+    <h2><b>Early response assessment of glioma patients using serial DSC-MRI</b></h2>
+    <p>Functional   imaging   approaches   complement   anatomical   magnetic resonance  imaging  (MRI)  scans  and  are  increasingly  being  evaluated in   oncology   practice   for   diagnosis   and   assessment   of   treatment response. DSC-MRI provides hemodynamic information that can be monitored post-treatment initiation. Our "general" approach to analyzing quantitative MRI was able to predict survival as early as one week post-treatment initiation.</p>
+      <a href="https://www.nature.com/articles/nm.1919"> Read Our Paper</a>
       </div>
-      <div class="col-md-6">
-        <img  src="../img/emph.jpg" alt="Research Icon" height="80%">
+      <div class="col-lg-4">
+        <br/>
+        <img  src="" class="img-fluid">
       </div>
     </div>
   </div>
+  <!-- End of Content Panel-->
+
+  <!-- Start of Content Panel-->
+
   <div class="container-fluid">
     <div class="row">
-    <h2><b> COPD Header 2</b></h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <p> Lorem Ipsum ...</p>
+      <div class="col-lg-6">
+        <br/>
+        <h2><b>Radiation Planning of Lung Cancer</b></h2>
+        <p>Non-small cell lung cancer (NSCLC) patients are at an increased risk for pulmonary comorbidities, which are
+        known to effect radiation treatment (RT) outcomes. And yet, RT plans are currently developed without considering
+        underlying functionality of the lung. We provide preliminary evidence demonstrating the potential of our
+        tPRM approach for patient-specific radiation treatment planning.</p>
       </div>
-      <div class="col-md-6">
-        <img  src="../img/emph.jpg" alt="Research Icon"  height="80%">
+      <div class="col-lg-6">
+        <br/>
+        <img  src="" class="img-fluid">
       </div>
     </div>
   </div>
-  <div class="container-fluid bg-light">
-    <br/>
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <a href="../research.html">
-          <img  src="../img/research.png" alt="Research Icon" id="icon" height="100px">
-        </a>
-      </div>
-      <div class="col-md-6 text-center">
-        <a href="../index.html">
-          <img  src="../img/home.png" alt="Home Icon" id="icon" height="100px">
-        </a>
-      </div>
-    </div>
-    <br/>
-  </div>
+  <!-- End of Content Panel-->
 
+  <!-- Start of Content Panel-->
+
+  <div class="container-fluid bg-light">
+    <div class="row">
+      <div class="col-lg-4">
+        <br/>
+        <img  src="" height="60%">
+      </div>
+      <div class="col-lg-8">
+        <br/>
+        <h2><b>Providing Advanced Imaging and Computational Analyses for Cancer Research</b></h2>
+      </div>
+    </div>
+  </div>
+  <!-- End of Content Panel-->
+  <!-- Footer Content -->
+  <div class="container-fluid" id="um">
+    <br/>
+    <br/>
+
+  </div>
 </body>
 </html>
