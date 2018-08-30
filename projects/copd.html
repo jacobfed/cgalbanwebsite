@@ -95,113 +95,125 @@ hoverable:hover {
 }
 </style>
 </head>
-
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
 <body>
-  <div class="container-fluid" id="um">
-    <div class="row">
-      <div class="col-lg-8">
-        <br/>
-        <h1>COPD</h1>
-        <h3>Chronic Obstructive Pulmonary Disease, Emphysema</h3> 
-        <div class="d-none d-lg-block">
-          <br/></br/><br/>
+  <div id="um">
+    <div class="container-fluid" id="um">
+        <div class="row">
+          <div class="col-lg-8">
+            <br/>
+            <h1>COPD</h1>
+            <h3>Chronic Obstructive Pulmonary Disease, Emphysema</h3> 
+            <div class="d-none d-lg-block">
+              <br/></br/><br/>
+            </div>
+          </div>
+          <!-- Start of Navbar -->
+          <div class="col-lg-4">
+            <br/>
+            <nav class="navbar-expand-sm navbar navbar-dark">
+              <!-- Brand -->
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class= "nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../research.html">Research</a></li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    links
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="http://www.copdgene.org/">COPD GENE</a>
+                    <a class="dropdown-item" href="https://www.nature.com/articles/nm.2971">Paper 1</a>
+                    <a class="dropdown-item" href="https://www.atsjournals.org/doi/abs/10.1164/rccm.201701-0050OC">Paper 2</a>
+                    <a class="dropdown-item" href="https://www.nature.com/articles/s41598-017-02871-1">Paper 3</a>
+                    <!--
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                    -->
+                  </div>
+                </li>
+              </ul> 
+            </nav>  
+          </div>
         </div>
-      </div>
-      <!-- Start of Navbar -->
-      <div class="col-lg-4">
-        <br/>
-        <nav class="navbar-expand-sm navbar navbar-dark">
-          <!-- Brand -->
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class= "nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="../research.html">Research</a></li>
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                links
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="http://www.copdgene.org/">COPD GENE</a>
-                <a class="dropdown-item" href="https://www.nature.com/articles/nm.2971">Paper 1</a>
-                <a class="dropdown-item" href="https://www.atsjournals.org/doi/abs/10.1164/rccm.201701-0050OC">Paper 2</a>
-                <a class="dropdown-item" href="https://www.nature.com/articles/s41598-017-02871-1">Paper 3</a>
-                <!--
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-                -->
-              </div>
-            </li>
-          </ul> 
-        </nav>  
       </div>
     </div>
   </div>
   <!-- End of Title and Navbar -->
 
   <!-- Start of Content Panel-->
-
-  <div class="container-fluid bg-light">
-    <div class="row">
-      <div class="col-lg-8">
-        <br/>
-    <h2><b>New approaches to Characterize small airways disease in COPD patients.</b></h2>
-        <p>Chronic     Obstructive     Pulmonary     Disease     (COPD)  is characterized by incompletely reversible airflow limitations that hinders normal breathing. Small airways disease, a treatable component of COPD, accounts for most of the pulmonary dysfunction in patients with mild to moderate disease. Using standard of care paired CT scans, our technique, called Parametric Response Mapping, is capable of visualizing and quantifying the SAD in the presence of emphysema.</p>
-        <a href="https://www.nature.com/articles/nm.2971">Read Our Paper</a>
-      </div>
-      <div class="col-lg-3">
-        <br/>
-        <img  src="../img/prm1.jpg" alt="Research Icon" class="img-fluid" style="max-height:400pt;">
-      </div>
-      <div class="col-lg-1">
-      </div>
-    </div>
-    <br/>
-  </div>
-  <!-- End of Content Panel-->
-
-  <!-- Start of Content Panel-->
-
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-7">
-        <br/>
-    <h2><b>Predicting Spirometric Decline in COPD Patients</b></h2>
-      <p>COPD patients demonstrate varying rates of disease progression. Some may show a stable condition where treatments manage the conditions, we as others may progress rapidly losing nearly all pulmonary function over a short period of time. Early knowledge of the rate of progression will aid physicians in treating their patients. We have demonstrated that SAD, as measured by PRM, is predictive of spirometric decline in patients with mild to moderate COPD.</p>
-        <a href="https://www.atsjournals.org/doi/abs/10.1164/rccm.201701-0050OC">Read Our Paper</a>
+    <div class="container">
+      <div class="row">
+        <h2><b>New approaches to Characterize small airways disease in COPD patients.</b></h2>
       </div>
-      <div class="col-lg-5">
-        <br/>
-        <img  src="../img/projects/copd_panel2.jpeg" alt="Research Icon" class="img-fluid" style="max-height:375pt;">
+      <div class="row">
+        <div class="col-lg-7">
+          <br/>
+          <p>Chronic     Obstructive     Pulmonary     Disease     (COPD)  is characterized by incompletely reversible airflow limitations that hinders normal breathing. Small airways disease, a treatable component of COPD, accounts for most of the pulmonary dysfunction in patients with mild to moderate disease. Using standard of care paired CT scans, our technique, called Parametric Response Mapping, is capable of visualizing and quantifying the SAD in the presence of emphysema.</p>
+          <a href="https://www.nature.com/articles/nm.2971">Read Our Paper</a>
+        </div>
+        <div class="col-lg-5">
+          <br/>
+          <img  src="../img/projects/copd_panel1_new.jpg" alt="Research Icon" class="img-fluid"
+          style="max-height:300pt;" data-toggle="popover" data-content="(a,b) The distribution of voxels with varying values at inspiration and expiration for an individual with normal status as determined by spirometry (FEV1/FVC = 83%, FEV1 = 99%) (a) and an individual with GOLD 4 status (FEV1/FVC = 25, FEV1 = 18) (b). Representative coronal slices of CT images at inspiration (top) and expiration (bottom) are provided for each subject. The distribution of voxels generates an elongated elliptical pattern with voxels highly concentrated in the center (red) and decreasing on the periphery (blue). (c) As observed for the two cases (a and b), a unique attribute of PRM is the distinct signature, distribution and location of the voxels in the inspiration-expiration plots. Calculation of the center of distribution that is the median value for both axes (position of the arrows) and principal eigenvector of the data determined by the principal component analysis (arrows) provide information on location and direction of the principal distribution, respectively. A plot of these two metrics for each subject with the three PRM color-codes for COPD is shown. Yellow scale bars indicate 5 cm.">
+        </div>
       </div>
+      <br/>
     </div>
-    <br/>
   </div>
   <!-- End of Content Panel-->
 
   <!-- Start of Content Panel-->
 
   <div class="container-fluid bg-light">
-    <div class="row">
-      <div class="col-lg-4">
-        <br/>
-        <img  src="../img/emph.jpg" alt="Research Icon" height="60%">
+    <div class="container">
+      </br>
+      </br>
+      <div class="row">
+        <h2><b>Predicting Spirometric Decline in COPD Patients</b></h2>
       </div>
-      <div class="col-lg-8">
-        <br/>
-        <h2><b>Quantifying the Spatial heterogeneity of SAD</b></h2>
-        <p>Emphysema, irreversible alveolar destruction, is a leading cause of mortality in this population as  well  as  being identified  as  a  predictor  of poor survival. Associated  with  severe  COPD, emphysema advances  slowly with limited  treatment  options once  diagnosed. Evidence of small airways disease as  an  emphysema  precursor. This highlights the potential importance of the independent and non-invasive evaluation of fSAD through PRM. We have developed a technique that is an extension of the PRM approach that extracts local topological features from PRM-derived disease classifications maps.
-Movie/Picture: transition from PRM image to tPRM image</p>
-        <a href="https://www.nature.com/articles/s41598-017-02871-1">Read Our Paper</a>
+      <div class="row">
+        <div class="col-lg-7">
+          <br/>
+        <p>COPD patients demonstrate varying rates of disease progression. Some may show a stable condition where treatments manage the conditions, we as others may progress rapidly losing nearly all pulmonary function over a short period of time. Early knowledge of the rate of progression will aid physicians in treating their patients. We have demonstrated that SAD, as measured by PRM, is predictive of spirometric decline in patients with mild to moderate COPD.</p>
+          <a href="https://www.atsjournals.org/doi/full/10.1164/rccm.201511-2219OC">Read Our Paper</a>
+        </div>
+        <div class="col-lg-5">
+          <br/>
+          <img  src="../img/projects/copd_panel2_new.jpeg" alt="Research Icon" class="img-fluid" data-toggle="popover" style="max-height:375pt;"
+          data-content= "Graphic representation of the parametric response mapping (PRM) methodology. Chronic obstructive pulmonary disease of GOLD (Global Initiative for Chronic Obstructive Lung Disease) grades 1–4 are shown in rows. Inspiratory and expiratory computed tomography (CT) images, respectively, are shown on the left. PRM emphysema (PRMEmph) voxels in red and PRM functional small airways (PRMfSAD) voxels in yellow are shown on the right. Although every voxel receives an individual categorical assignment, in this example PRMEmph and PRMfSAD are distributed throughout the lung. Greater intensity of color indicates more voxels classified in each category." >
+        </div>
+      </div>
+      <br/>
+    </div>
+  </div>
+  <!-- End of Content Panel-->
+
+  <!-- Start of Content Panel-->
+
+  <div class="container-fluid ">
+    <div class="container">
+      <div class="row">
+       <h2><b>Quantifying the Spatial heterogeneity of SAD</b></h2>
+      </div>
+      <div class="row">
+          <p>Emphysema, irreversible alveolar destruction, is a leading cause of mortality in this population as  well  as  being identified  as  a  predictor  of poor survival. Associated  with  severe  COPD, emphysema advances  slowly with limited  treatment  options once  diagnosed. Evidence of small airways disease as  an  emphysema  precursor. This highlights the potential importance of the independent and non-invasive evaluation of fSAD through PRM. We have developed a technique that is an extension of the PRM approach that extracts local topological features from PRM-derived disease classifications maps.
+  Movie/Picture: transition from PRM image to tPRM image</p>
+          <a href="https://www.nature.com/articles/s41598-017-02871-1">Read Our Paper</a>
+        </div>
       </div>
     </div>
-    <br/>
   </div>
   <!-- End of Content Panel-->
   <!-- Footer Content -->
   <div class="container-fluid" id="um">
     <br/>
     <br/>
-
   </div>
 </body>
 </html>
