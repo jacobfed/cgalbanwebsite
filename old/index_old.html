@@ -26,12 +26,10 @@
 
   <!-- Personalized Style Sheet for bootstrap changes -->
   <!--<link rel="stylesheet" href="style.css"> -->
-  <link rel="stylesheet" type="text/css" href="/style.css">
 
   <!-- Umich Icon for Chrome tabs -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <title>Galban Lab</title>
- 
 <style>
 .navbar {
   margin-bottom: 0;
@@ -58,7 +56,6 @@ p, a {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  text-align: justify;
 }
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -69,10 +66,6 @@ h2,h3,h4,h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-.smaller {
-  font-size:14px;
-  color: grey;
-}
 /* End of Fonts */
 
 .container {
@@ -80,11 +73,22 @@ h2,h3,h4,h5 {
 }
 
 #icon {
-  height=100px;
   max-width: 200px;
   margin: 1% auto;
 }
 
+.btn {
+  font-size: 18px;
+  color: #FFF;
+  padding: 12px 22px;
+}
+
+footer {
+  width: 100%;
+  background-color: lightgrey ;
+  padding: 5%;
+  color: #FFF;
+}
 
 .img-responsive {
   margin: 0 auto;
@@ -94,6 +98,40 @@ h2,h3,h4,h5 {
   width: 50%;
   height: auto;
 }
+
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  color: #FFF;
+}
+
+.fa:hover {
+  color: #D5D5D5;
+  text-decoration: none;
+}
+
+@media (max-width: 900px){
+  .fa {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+  #icon {
+    max-width: 150px;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  .embed-responsive {
+    display:none;
+  }
+}
+
+
 a:link {
   color: black;
 }
@@ -136,9 +174,7 @@ hoverable:hover {
   font-size: 55px;
   color: black;
 }
-.brand-primary: {
-  color:#ffcb05;
-}
+
 </style>
 </head>
 
@@ -147,13 +183,10 @@ hoverable:hover {
     <div class="row">
       <div class="col-md-6">
         <img src="img/craigLogo.png" alt="Craig Logo" width="60%">
-        <div class="d-block d-md-none ">
-          <br/>
-        </div>
       </div>
       <!-- Place for image of labs around the world-->
       <div class="col-md-6">
-        <p> Algorithmic development of translatable CT-based biomarkers for disease
+        <p> Algorithmic development of translatable MRI and CT-based biomarkers for disease
         phenotyping and prediction of therapeutic response and survival.</p>
       </div>
     </div>
@@ -168,29 +201,39 @@ hoverable:hover {
     <!-- Collapsible Button for Mobile Devices -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
       <span class="navbar-toggler-icon"></span>
-    </button> 
+    </button>
     
     <!-- Pages with (no) Dropdowns -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+        <!-- TODO Change Active for every Page when Navbar and Footer Are All set-->
+        <!-- Projects Dropdown -->
+        <!--<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#ld">Lung Disease</a>
+            <a class="dropdown-item" href="#lc">Lung Cancer</a>
+            <a class="dropdown-item" href="#c">Cancer</a>
+          </div>            
+        </li>-->
+        <!-- End of Project Dropdown -->
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="collaborators.html">Collaborators</a></li>
-        <li class="nav-item"><a class="nav-link" href="conferences.html">Conferences</a></li>
-        <li class="nav-item"><a class="nav-link" href="opportunities.html">Opportunities</a></li>
+        <li class="nav-item"><a class="nav-link" href="collaborations.html">Collaborations</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Upcoming Events</a></li>
       </ul>
     </div>
   </nav>  
 
   <!-- End of Navbar -->
+                          <!-- End of Base URL -->
 
-  <!-- End of Base URL -->
   <!--- Start of Bio -->
   <div class="container">
     <div class="row">
       <!-- Place for image of labs around the world-->
-      <div class="col-lg-8">
+      <div class="col">
         <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The mission of the C. Galban Lab is to fully exploit the
 spatial and functional information within clinical imaging data with the goal of advancing personalized medicine, both
 in terms of optimizing disease management, and tailoring treatment to the individual patient. On-going projects include
@@ -198,59 +241,56 @@ topological feature extraction for improved COPD subtyping, optimized radiation 
 cancer patients, and improve detection of deployment related small airways disease in post-combat military personnel.
 These studies are performed in a multi-disciplinary environment which include scientists, physicians, statisticians and
 engineers, as well as large clinical trials and industrial partners.</p>
-        <!-- Start of Carousel -->
-        <div class="container text-center">
-          <div id="demo" class="carousel slide" data-ride="carousel">
-
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-              <li data-target="#demo" data-slide-to="0" class="active"></li>
-              <li data-target="#demo" data-slide-to="1"></li>
-              <li data-target="#demo" data-slide-to="2"></li>
-              <li data-target="#demo" data-slide-to="3"></li>
-              <li data-target="#demo" data-slide-to="4"></li>
-            </ul>
-
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/prm1.jpg" alt="prm" width=auto height='500 px'>
-              </div>
-              <div class="carousel-item">
-                <img src="img/prm2_1.jpg" alt="prm2" width=auto height='500 px'>
-              </div>
-              <div class="carousel-item">
-                <img src="img/prm2_2.jpg" alt="prm2" width=auto height='500 px'>
-              </div>
-              <div class="carousel-item">
-                <img src="img/prm3_1.jpg" alt="prm3" width=auto height='500 px'>
-              </div>
-              <div class="carousel-item">
-                <img src="img/prm3_2.jpg" alt="prm3" width=auto height='500 px'>
-              </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-            </div>
-  <!-- End of Carousel -->
-        </div>
-      </div>
-      <div class="col-lg-4 d-none d-sm-block">
-        <h4>Recent News</h4>
-        <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="light" href="https://twitter.com/NIH?ref_src=twsrc%5Etfw">Tweets by NIH</a> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
   </div>
+  <!-- Start of Carousel -->
+  <div class="container text-center">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/prm1.jpg" alt="prm" width=auto height='500 px'>
+      </div>
+      <div class="carousel-item">
+        <img src="img/prm2_1.jpg" alt="prm2" width=auto height='500 px'>
+      </div>
+      <div class="carousel-item">
+        <img src="img/prm2_2.jpg" alt="prm2" width=auto height='500 px'>
+      </div>
+      <div class="carousel-item">
+        <img src="img/prm3_1.jpg" alt="prm3" width=auto height='500 px'>
+      </div>
+      <div class="carousel-item">
+        <img src="img/prm3_2.jpg" alt="prm3" width=auto height='500 px'>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+  </div>
+  <!-- End of Carousel -->
   <!-- End of Bio -->
 
 
+                    <!-- Start of Base Pages -->
   <!-- Horizontal Line -->
   <div class="container text-center">
     <hr>
