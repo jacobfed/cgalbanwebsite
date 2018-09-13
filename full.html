@@ -25,11 +25,32 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 
   <!-- Personalized Style Sheet for bootstrap changes -->
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css1">
 
   <!-- Umich Icon for Chrome tabs -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
   <title>Galban Lab</title>
+  <style>
+  .container {
+    margin: 4% auto;
+  }
+  p, a {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: justify;
+}
+  h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+  h2,h3,h4,h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+</style>
 </head>
 
 <body>
@@ -76,14 +97,6 @@
   <!-- End of Navbar -->
 
   <!-- End of Base URL -->
-  <!-- Start of Newsfeed -->
-  <div class="col-lg-4 bg-light news d-none d-lg-block">
-    <h4>Recent News</h4>
-    <a class="twitter-timeline" data-width="100%" data-height="400px" data-theme="light" href="https://twitter.com/NIH?ref_src=twsrc%5Etfw">Tweets by NIH</a> 
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  <!-- End of Newsfeed -->
-
   <!--- Start of Bio -->
   <div class="container">
     <div class="row">
@@ -96,55 +109,58 @@ topological feature extraction for improved COPD subtyping, optimized radiation 
 cancer patients, and improve detection of deployment related small airways disease in post-combat military personnel.
 These studies are performed in a multi-disciplinary environment which include scientists, physicians, statisticians and
 engineers, as well as large clinical trials and industrial partners.</p>
-      </div>
-    </div>
-  </div>
-  <!-- End of Bio -->
+        <!-- Start of Carousel -->
+        <div class="container text-center">
+          <div id="demo" class="carousel slide" data-ride="carousel">
 
-  <!-- Start of Carousel -->
-  <div class="container text-center">
-  <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
 
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-      <li data-target="#demo" data-slide-to="3"></li>
-      <li data-target="#demo" data-slide-to="4"></li>
-    </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/prm1.jpg" alt="prm" width=auto height='500 px'>
+              </div>
+              <div class="carousel-item">
+                <img src="img/prm2_1.jpg" alt="prm2" width=auto height='500 px'>
+              </div>
+              <div class="carousel-item">
+                <img src="img/prm2_2.jpg" alt="prm2" width=auto height='500 px'>
+              </div>
+              <div class="carousel-item">
+                <img src="img/prm3_1.jpg" alt="prm3" width=auto height='500 px'>
+              </div>
+              <div class="carousel-item">
+                <img src="img/prm3_2.jpg" alt="prm3" width=auto height='500 px'>
+              </div>
+            </div>
 
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/prm1.jpg" alt="prm" width=auto height='500 px'>
-      </div>
-      <div class="carousel-item">
-        <img src="img/prm2_1.jpg" alt="prm2" width=auto height='500 px'>
-      </div>
-      <div class="carousel-item">
-        <img src="img/prm2_2.jpg" alt="prm2" width=auto height='500 px'>
-      </div>
-      <div class="carousel-item">
-        <img src="img/prm3_1.jpg" alt="prm3" width=auto height='500 px'>
-      </div>
-      <div class="carousel-item">
-        <img src="img/prm3_2.jpg" alt="prm3" width=auto height='500 px'>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-
-  </div>
-  </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+            </div>
   <!-- End of Carousel -->
+        </div>
+      </div>
+      <div class="col-lg-4 d-none d-sm-block">
+        <h4>Recent News</h4>
+        <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="light" href="https://twitter.com/NIH?ref_src=twsrc%5Etfw">Tweets by NIH</a> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
   <!-- End of Bio -->
+  <!-- Horizontal Line -->
   <div class="container text-center">
     <hr>
   </div>
@@ -164,7 +180,7 @@ engineers, as well as large clinical trials and industrial partners.</p>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <h3>Principle Investigator</h3>
           <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#craig">Craig Galban, Ph.D.</button>
           <br/>
@@ -191,11 +207,10 @@ engineers, as well as large clinical trials and industrial partners.</p>
           <br/>
           <h3>Craig Galban</h3>
           <p>University of Michigan,<br/>Department of Radiology<br/><br/>
-          Director of Preclinical Imaging &amp; Computational Analysis<br/>
-          UM Rogel Cancer CenterCore Director<br/>
-          Center For Molecular Imaging Associate Professor<br/>
-          Department of Radiology Adjunct Associate Professor<br/>
-          Department of Biomedical Engineering<br/><br/>
+          Director of Preclinical Imaging &amp; Computational Analysis, UM Rogel Cancer Center<br/>
+          Core Director, Center for Molecular Imaging</br>
+          Associate Professor, Department of Radiology</br>
+          Adjunct Associate Professor, Department of Biomedical Engineering</br>
           BSRB, Room A506 <br/>
           109 Zina Pitcher Place <br/> Ann Arbor, MI 48109-2200 <br/> 
           Phone (office): 734-764-8726<br/>Phone (google): 734-956-0219<br/>
@@ -214,7 +229,7 @@ engineers, as well as large clinical trials and industrial partners.</p>
         <!-- Andrew's Contact Information -->
         <div id="andrew" class="collapse">
           <h3>Andrew Dziobak</h3>        
-          <p>Email: afdzioba@umich.edu</p>
+          <p>University of Michigan, Computer Engineering<br/>Email: afdzioba@umich.edu </p>
         </div>
         <!-- Jacob's Contact Information -->
         <div id="jacob" class="collapse">
@@ -259,19 +274,20 @@ engineers, as well as large clinical trials and industrial partners.</p>
       <div class="col-md-6">
         <div id="stefanie" class="collapse">
           <h3>Stefanie Galban</h3>
-          <p>University of Michigan,<br/>Department of Radiology<br/><br/>
-            Biomedical Research Building<br/>
-            109 Zina Pitcher Place, Room A502<br/>
+          <p>Assistant Professor</br>
+          University of Michigan,<br/><br/>
+            BSRB, Room A502<br/>
+            109 Zina Pitcher Place
             Ann Arbor, MI 48109-2200<br/>
-            Phone (office): 734-615-2281<br/>
-            Email: abfortun@med.umich.edu<br/>
+            Email: sgalban@med.umich.edu<br/>
           </p>
         </div>
         <div id="charles" class="collapse">
           <h3>Charles Hatt</h3>
           <p>
-          University of Michigan Medical School<br/>
-          Email: charleshatt@imbio.com<br/></p> 
+          Adjunct Assistant Professor, University of Michigan Medical School<br/>
+          Email: charleshatt@imbio.com<br/>
+          Scientist at Imbio, LLC</p> 
         </div>
         <div id="ben" class="collapse">
           <h3>Ben Hoff</h3>
@@ -300,11 +316,10 @@ engineers, as well as large clinical trials and industrial partners.</p>
           <div id="craig1" class="collapse">
             <br/>
             <p>University of Michigan,<br/>Department of Radiology<br/><br/>
-            Director of Preclinical Imaging &amp; Computational Analysis<br/>
-            UM Rogel Cancer CenterCore Director<br/>
-            Center For Molecular Imaging Associate Professor<br/>
-            Department of Radiology Adjunct Associate Professor<br/>
-            Department of Biomedical Engineering<br/><br/>
+            Director of Preclinical Imaging &amp; Computational Analysis, UM Rogel Cancer Center<br/>
+            Core Director, Center for Molecular Imaging</br>
+            Associate Professor, Department of Radiology</br>
+            Adjunct Associate Professor, Department of Biomedical Engineering</br>
             BSRB, Room A506 <br/>
             109 Zina Pitcher Place <br/> Ann Arbor, MI 48109-2200 <br/> 
             Phone (office): 734-764-8726<br/>Phone (google): 734-956-0219<br/>
@@ -335,7 +350,7 @@ engineers, as well as large clinical trials and industrial partners.</p>
           <button type="button" class="btn-lg btn-outline-dark " data-toggle="collapse" data-target="#andrew1">Andrew Dziobak</button>
           <!-- Andrew's Contact Information -->
           <div id="andrew1" class="collapse">
-            <p><br/>Email: afdzioba@umich.edu</p>
+          <p>University of Michigan, Computer Engineering<br/>Email: afdzioba@umich.edu </p>
           </div>
         </div>
       </div><br/><div class="row">
@@ -373,14 +388,13 @@ engineers, as well as large clinical trials and industrial partners.</p>
           <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#stefanie1">Stefanie
             Galban, Ph.D.</button>
           <div id="stefanie1" class="collapse">
-            <p>
-            <br/>University of Michigan,<br/>Department of Radiology<br/><br/>
-              Biomedical Research Building<br/>
-              109 Zina Pitcher Place, Room A502<br/>
-              Ann Arbor, MI 48109-2200<br/>
-              Phone (office): 734-615-2281<br/>
-              Email: abfortun@med.umich.edu<br/>
-            </p>
+          <p>Assistant Professor</br>
+          University of Michigan,<br/><br/>
+            BSRB, Room A502<br/>
+            109 Zina Pitcher Place
+            Ann Arbor, MI 48109-2200<br/>
+            Email: sgalban@med.umich.edu<br/>
+          </p>
           </div>
         </div>
       </div>
@@ -390,9 +404,10 @@ engineers, as well as large clinical trials and industrial partners.</p>
           <h3>Development Scientist, Imbio LLC</h3>
           <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#charles1">Charles Hatt</button>
           <div id="charles1" class="collapse">
-            <p><br/>
-            University of Michigan Medical School<br/>
-            Email: charleshatt@imbio.com<br/></p> 
+          <p>
+          Adjunct Assistant Professor, University of Michigan Medical School<br/>
+          Email: charleshatt@imbio.com<br/>
+          Scientist at Imbio, LLC</p> 
           </div>
         </div>
       </div>
@@ -411,7 +426,11 @@ engineers, as well as large clinical trials and industrial partners.</p>
     </div>
   </div>
   <!-- End of Team Members -->
-  
+  <!-- Horizontal Line -->
+  <div class="container text-center">
+    <hr>
+  </div>
+
   <!-- Start of Projects -->
   <div class="container text-center">
     <h1> Projects </h1>
@@ -421,20 +440,19 @@ engineers, as well as large clinical trials and industrial partners.</p>
       <div class="col-sm-4">
         <img src="img/copd.png" alt="COPD Symbol" height="100px" id="icon">
         <h4>COPD</h4>
-        <p class="smaller"> (Sample) Chronic Obstructive Pulmonary Disease is a chronic inflammatory lung disease that causes obstructed
-        airflow from the lungs.</p>
+        <p class="smaller"> New approaches to characterize small airways disease in COPD patients.</p>
         <a class="btn btn-outline-dark btn-sm" href="projects/copd.html">Webpage</a>
       </div>
       <div class="col-sm-4">
         <img src="img/bos.png" alt="BOS Symbol"  height="100px" id="icon">
         <h4>BOS</h4>
-        <p class="smaller">Brochiolitis Obliterans Syndrome can occur after lung transplants.</p>
+        <p class="smaller">Marker of Bronchiolitis Obliterans Syndrome in Transplant Reciepients.</p>
         <a class="btn btn-outline-dark btn-sm" href="projects/bos.html">Webpage</a>
       </div>
       <div class="col-sm-4">
         <img src="img/cancer.png" alt="Cancer Symbol" height="100px" id="icon">
         <h4>Cancer</h4>
-        <p class="smaller"> Lorem Ipsum . . . </p>
+        <p class="smaller">Applying voxel-based analytical techniques for treating and monitoring cancer.</p>
         <a class="btn btn-outline-dark btn-sm" href="projects/cancer.html">Webpage</a>
       </div>
     </div>
@@ -443,25 +461,30 @@ engineers, as well as large clinical trials and industrial partners.</p>
       <div class="col-sm-4">
         <img src="img/machinelearning.png" alt="Machine Learning Symbol" height=100px id="icon">
         <h4>Machine Learning</h4>
-        <p class="smaller"> Lorem Ipsum . . . </p>
-        <a class="btn btn-outline-dark btn-sm" href="projects/machinelearning.html">Webpage</a>
+        <p class="smaller">Developing ML Algorithms for rediological &amp; clinical applications.</p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/ml.html">Webpage</a>
       </div>
       <div class="col-sm-4">
         <img src="img/qat.jpg" alt="QAT Symbol"  height= 100px id="icon">
-        <h4>QAT</h4>
-        <p class="smaller"> Lorem Ipsum . . . </p>
-        <a class="btn btn-outline-dark btn-sm" href="projects/qat.html">Webpage</a>
+        <h4>Quantitative Imaging</h4>
+        <p class="smaller">Development and analysis of imaging biomarkers for disease phenotyping and prediction of
+        therapeutic response and survival.</p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/qi.html">Webpage</a>
       </div>
       <div class="col-sm-4">
         <img src="img/tprm.png" alt="tPRM Symbol" height=100px id="icon">
-        <h4>tPRM</h4>
-        <p class="smaller"> Lorem Ipsum . . . </p>
-        <a class="btn btn-outline-dark btn-sm" href="projects/tprm1.html">Webpage</a>
+        <h4>MultiParametric Analysis</h4>
+        <p class="smaller">A multiparametric extension of a voxel-based analysis.</p>
+        <a class="btn btn-outline-dark btn-sm" href="projects/mpa.html">Webpage</a>
       </div>
     </div>
   </div>
   <!-- End of Projects -->
 
+  <!-- Horizontal Line -->
+  <div class="container text-center">
+    <hr>
+  </div>
   <!-- Start of Publications -->
   <div class="container text-center">
     <h1> Publications </h1>
@@ -680,60 +703,10 @@ engineers, as well as large clinical trials and industrial partners.</p>
   </div>
   <!-- End of Publications -->
 
-  <!-- Start of Collaborations -->
+  <!-- Horizontal Line -->
   <div class="container text-center">
-    <h1> Collaborators </h1>
-    <div class="row">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item"
-          src="https://www.google.co.uk/maps/d/u/0/embed?mid=133o4gAaNOna_zLEBb8AY34Zj9oBi8QP4&z=2"></iframe>
-      </div>
-    </div>
-    <br/><br/>
-    <button type="button" class="btn-lg btn-outline-dark" data-toggle="collapse" data-target="#collaborators">List of Collaborators</button>
-        <div id="collaborators" class="collapse">
-          <br/>
-          <h4> Michigan </h4>
-          <p><b>Beaumont Health<br/>
-          Michigan Medicine</b><br/>
-          C. S. Mott Children's Hospital<br/>
-          Radiation Oncology<br/>
-          Radiology<br/>
-          Taubman Center<br/><br/>
-          </p>
-          <h4> United States </h4>
-          <p><b>
-          Florida State University<br/>
-          Fred Hutchinson Cancer Research Center<br/>
-          National Jewish Health<br/>
-          Stanford University School of Medicine, CA<br/>
-          University of Iowa <br/>
-          University of Wisconsin School of Medicine &amp; Public Health<br/>
-          Vanderbilt University Medical Center<br/>
-          Weill Cornell Medical College <br/>
-          </b></p>
-          <h4> International </h4>
-          <p>
-          <b>Goa Medical College, India<br/>
-          Hôpital Saint Louis, Paris, France<br/>
-          Karolinska University Hospital, Sweden <br/>
-          University of British Columbia, Canada<br/>
-          University of Heidelberg, Germany<br/>
-          University of Leicester, England<br/>
-          University of Leuven, Belgium<br/>
-          University Medical Center Utrecht, Netherlands<br/>
-          </b></p>
-        </div>
+    <hr>
   </div>
-    <div class="container text-center">
-      <H2>Research Opportunities</h2>
-      <p>If you are looking to become a collaborator with us, fill out this google form.</p>
-    </div>
-    <div class="container embed-responsive embed-responsive-21by9">
-      <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSdGOqa9WGxB6ymqvpRPiMOEBvo5nTl5kOT_kznush0rHTvdfQ/viewform?embedded=true">Loading...</iframe>
-    </div>
-
-  <!-- End of Collaborations -->
 
   <!-- Start of Conferences -->
   <div class="container text-center">
@@ -746,7 +719,11 @@ engineers, as well as large clinical trials and industrial partners.</p>
   </div>
 
   <!-- End of Conferences -->
-
+  <!-- Horizontal Line -->
+  <div class="container text-center">
+    <hr>
+  </div>
+  
   <!-- Start of Opportunities -->
   <div class="container text-center">
     <h1> Job Opportunities </h1>
@@ -755,11 +732,12 @@ engineers, as well as large clinical trials and industrial partners.</p>
   </div>
   <!-- End of Opportunities -->
 
-  <!-- Start of Base Pages -->
 
   <!-- Horizontal Line -->
   <div class="container text-center">
     <hr>
   </div>
+
+
 </body>
 </html>
